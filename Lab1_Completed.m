@@ -37,6 +37,7 @@ for j=1:N,
         u(k)=systemeqv(a,b);
     end;
     %оценка параметров (реакции) по выборке наблюдений
+        mx=mean(u);
         DX=std(u)^2;
     Y(j)=DX;
 end;
