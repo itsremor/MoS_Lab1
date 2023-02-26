@@ -45,9 +45,9 @@ minf=[4 2]; maxf=[7 7];
 level=[2 2];
 %формирование полного плана эксперимента 
 fullfact(level);
-fulplan=ans;
+fulplan=ans
 N=level(1) * level(2);
-fracplan=ans;
+fracplan=ans
 fictfact=ones(N,1);
 X=[fictfact ans]'
 fraceks=zeros(N,nf);

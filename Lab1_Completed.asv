@@ -42,12 +42,12 @@ clear all;
 nf=2;
 minf=[4 2]; maxf=[7 7];
 %задание количества уровней каждого фактора
-level=[3 3];
+level=[2 2];
 %формирование полного плана эксперимента 
 fullfact(level);
-fulplan=ans;
-N=3*3;
-fracplan=ans;
+fulplan=ans
+N=level(1) * level(2);
+fracplan=ans
 fictfact=ones(N,1);
 X=[fictfact ans]'
 fraceks=zeros(N,nf);
@@ -59,7 +59,7 @@ end;
 fraceks
 %тактическое планирование эксперимента
 %задание доверительного интервала и уровня значимости
-d_sigma=0.1;
+d_sigma=0.02;
 alpha=0.05;
 %определение t-критического
 tkr_alpha=norminv(1-alpha/2);
@@ -105,6 +105,7 @@ for i=1:N1,
             Yo(j,i)=(A(i)^2)*exp(B(j)^2)*(exp(B(j)^2)-1);
 end;
 end;
+
 % отобрабражение зависимостей в трехмерной графике 
 [x,y]=meshgrid(A,B);
 figure;
