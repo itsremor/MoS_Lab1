@@ -88,14 +88,14 @@ end;
 [x,y]=meshgrid(A,B);
 figure;
 subplot(1,2,1),plot3(x,y,Yc),
-xlabel('fact a'),
-ylabel('fact b'),
-zlabel('Yc'),
-title('System output'),
+xlabel('Фактор b'),
+ylabel('Фактор c'),
+zlabel('Реакция (эксп.)'),
+title('Экспериментальная поверхность реакции'),
 grid on,
 subplot(1,2,2),plot3(x,y,Yo),
-xlabel('fact a'),
-ylabel('fact b'),
-zlabel('Yo'),
-title('System output'),
+xlabel('Фактор b'),
+ylabel('Фактор c'),
+zlabel('Реакция (теор.)'),
+title('Теоретическая поверхность реакции (реальная)'),
 grid on;
