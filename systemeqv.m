@@ -4,7 +4,7 @@
 function u=systemeqv(b,c);
 multip_var = 1;
 for i = 1:c
-    multip_var = multip_var * randn;
+    multip_var = multip_var * rand;
 end
 
 %датчик логнормального распределения
